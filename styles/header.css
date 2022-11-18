@@ -1,0 +1,22 @@
+header {
+  @apply max-h-max flex bg-transparent justify-between p-6 items-center mx-container;
+
+  & > div {
+    @apply relative flex-1 h-10 max-w-[12rem];
+  }
+
+  & > nav.lg {
+    @apply hidden md:block;
+
+    & > ul {
+      @apply flex gap-12;
+    }
+  }
+  & > nav.sm {
+    @apply block md:hidden;
+
+    & > ul {
+      @apply flex flex-col gap-12;
+    }
+  }
+}
