@@ -2,7 +2,7 @@
 
 import React, { useCallback, useRef, memo } from "react";
 
-function Form() {
+function Form({ api }) {
   const nameRef = useRef();
   const emailRef = useRef();
   const messageRef = useRef();
@@ -22,7 +22,7 @@ function Form() {
     };
 
     try {
-      await fetch("http://localhost:1337/api/forms", {
+      await fetch(`${api}/api/forms`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -39,22 +39,23 @@ function Form() {
   });
 
   return (
-    <div>
-      <form
-        className="flex flex-col gap-4 w-1/2 mx-auto border-2"
-        onSubmit={submit}
+    <form
+      className=" flex flex-col w-1/2 mx-auto border-2 rounded-lg"
+      onSubmit={submit}
+    >
+      <label htmlFor="name">Name :</label>
+      <input type="text" name="name" ref={nameRef} />
+      <label htmlFor="email">Email :</label>
+      <input type="email" name="email" ref={emailRef} />
+      <label htmlFor="message">Message :</label>
+      <textarea cols="30" rows="8" name="message" ref={messageRef}></textarea>
+      <button
+        type="submit"
+        className="bg-blue-500 text-white rounded-lg w-1/3 self-center p-2"
       >
-        <input type="text" placeholder="Name" ref={nameRef} />
-        <input type="email" placeholder="Email" ref={emailRef} />
-        <textarea
-          cols="30"
-          rows="8"
-          placeholder="Message"
-          ref={messageRef}
-        ></textarea>
-        <button type="submit">Submit</button>
-      </form>
-    </div>
+        Submit
+      </button>
+    </form>
   );
 }
 

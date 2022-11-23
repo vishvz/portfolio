@@ -3,7 +3,7 @@ import Form from "../../ui/form";
 function Contact() {
   return (
     <div>
-      <Form />
+      <Form api={process.env.API_URL} />
     </div>
   );
 }

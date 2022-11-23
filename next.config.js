@@ -8,8 +8,15 @@ const nextConfig = {
       {
         protocol: "https",
         hostname: "assets.website-files.com",
-        // port: '',
-        // pathname: '/account123/**',
+      },
+      {
+        protocol: "https",
+        hostname: "cdn.pixabay.com",
+      },
+      {
+        protocol: "http",
+        hostname: "localhost",
+        // port: "1337",
       },
     ],
   },

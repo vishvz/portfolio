@@ -8,7 +8,7 @@ export default function RootLayout({ children }) {
       <head>
         <title>Vishvajeet's Portfolio</title>
       </head>
-      <body className="bg-slate-500">
+      <body>
         <Header />
         {children}
         <Footer />

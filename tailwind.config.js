@@ -1,5 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  future: {
+    removeDeprecatedGapUtilities: true,
+  },
   content: [
     "./app/**/*.{js,ts,jsx,tsx}",
     "./pages/**/*.{js,ts,jsx,tsx}",
@@ -12,6 +15,9 @@ module.exports = {
       dark: "0 15px 15px 0.01px rgba(30, 61, 96, 0.03)",
     },
     extend: {
+      gridTemplateColumns: {
+        "auto-320px": "repeat(auto-fit, 20rem)",
+      },
       spacing: {
         container: `max(
           1rem,

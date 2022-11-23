@@ -5,7 +5,7 @@ import Logo from "./logo";
 
 function Header() {
   return (
-    <header className="bg-orange-300 mb-10">
+    <header className="mb-10">
       <div className="max-h-max flex justify-between py-6 md:items-center mx-container">
         <Logo />
         <LgNav />

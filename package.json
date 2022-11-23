@@ -13,17 +13,18 @@
   "license": "ISC",
   "dependencies": {
     "dotenv": "^16.0.3",
-    "eslint": "^8.27.0",
-    "eslint-config-next": "^13.0.3",
     "framer-motion": "^7.6.7",
-    "next": "^13.0.3",
+    "next": "^13.0.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@svgr/webpack": "^6.5.1",
     "autoprefixer": "^10.4.13",
+    "eslint": "^8.28.0",
+    "eslint-config-next": "^13.0.4",
     "postcss": "^8.4.19",
+    "prettier": "^2.7.1",
     "tailwindcss": "^3.2.4"
   }
 }
