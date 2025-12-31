@@ -1,79 +1,79 @@
-import type { Metadata } from 'next';
-import { Geist, Geist_Mono } from 'next/font/google';
-import './globals.css';
+import type { Metadata } from "next";
+import { Geist, Geist_Mono } from "next/font/google";
+import "./globals.css";
 
 const geistSans = Geist({
-  variable: '--font-geist-sans',
-  subsets: ['latin'],
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
 });
 
 const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
-  subsets: ['latin'],
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
 });
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://vishvajeet.dev';
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://vishvajeet.dev";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: 'Vishvajeet | Backend / Full-Stack Software Engineer',
-    template: '%s | Vishvajeet',
+    default: "Vishvajeet | Backend / Full-Stack Software Engineer",
+    template: "%s | Vishvajeet",
   },
   icons: {
-    icon: '/favicon.svg',
-    apple: '/favicon.svg',
+    icon: "/favicon.svg",
+    apple: "/favicon.svg",
   },
   description:
-    'Backend-focused software engineer building reliable systems for healthcare, IoT, and enterprise applications. Experienced in Node.js, NestJS, microservices, MongoDB, and PostgreSQL.',
+    "Backend-focused software engineer building reliable systems for healthcare, IoT, and enterprise applications. Experienced in Node.js, NestJS, microservices, MongoDB, and PostgreSQL.",
   keywords: [
-    'Backend Engineer',
-    'Full-Stack Developer',
-    'Node.js',
-    'NestJS',
-    'Express.js',
-    'TypeScript',
-    'JavaScript',
-    'MongoDB',
-    'PostgreSQL',
-    'Redis',
-    'Microservices',
-    'REST API',
-    'Healthcare Software',
-    'IoT Systems',
-    'Enterprise Applications',
-    'Software Engineer India',
-    'Ahmedabad Developer',
+    "Backend Engineer",
+    "Full-Stack Developer",
+    "Node.js",
+    "NestJS",
+    "Express.js",
+    "TypeScript",
+    "JavaScript",
+    "MongoDB",
+    "PostgreSQL",
+    "Redis",
+    "Microservices",
+    "REST API",
+    "Healthcare Software",
+    "IoT Systems",
+    "Enterprise Applications",
+    "Software Engineer India",
+    "Ahmedabad Developer",
   ],
-  authors: [{ name: 'Vishvajeet', url: siteUrl }],
-  creator: 'Vishvajeet',
-  publisher: 'Vishvajeet',
+  authors: [{ name: "Vishvajeet", url: siteUrl }],
+  creator: "Vishvajeet",
+  publisher: "Vishvajeet",
   alternates: {
-    canonical: '/',
+    canonical: "/",
   },
   openGraph: {
-    type: 'website',
-    locale: 'en_US',
+    type: "website",
+    locale: "en_US",
     url: siteUrl,
-    title: 'Vishvajeet | Backend / Full-Stack Software Engineer',
+    title: "Vishvajeet | Backend / Full-Stack Software Engineer",
     description:
-      'Backend-focused software engineer building reliable systems for healthcare, IoT, and enterprise applications.',
-    siteName: 'Vishvajeet Portfolio',
+      "Backend-focused software engineer building reliable systems for healthcare, IoT, and enterprise applications.",
+    siteName: "Vishvajeet Portfolio",
     images: [
       {
-        url: '/og-image.png',
+        url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: 'Vishvajeet - Backend / Full-Stack Software Engineer',
+        alt: "Vishvajeet - Backend / Full-Stack Software Engineer",
       },
     ],
   },
   twitter: {
-    card: 'summary_large_image',
-    title: 'Vishvajeet | Backend / Full-Stack Software Engineer',
+    card: "summary_large_image",
+    title: "Vishvajeet | Backend / Full-Stack Software Engineer",
     description:
-      'Backend-focused software engineer building reliable systems for healthcare, IoT, and enterprise applications.',
-    images: ['/og-image.png'],
+      "Backend-focused software engineer building reliable systems for healthcare, IoT, and enterprise applications.",
+    images: ["/og-image.png"],
   },
   robots: {
     index: true,
@@ -81,14 +81,13 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
     },
   },
   verification: {
-    // Add these when you have them
-    // google: 'your-google-verification-code',
+    google: "_es7LgcHeMw7Lb56dKpLGuSPzljXX3YcJ_tgppchATE",
     // yandex: 'your-yandex-verification-code',
   },
 };
@@ -100,7 +99,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
         {children}
       </body>
     </html>
