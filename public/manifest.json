@@ -1,0 +1,16 @@
+{
+  "name": "Vishvajeetsinh Zala - Portfolio",
+  "short_name": "Vishvajeet",
+  "description": "Backend / Full-Stack Software Engineer",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0B0D10",
+  "theme_color": "#C7B9A6",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

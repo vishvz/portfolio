@@ -168,38 +168,6 @@ export const skillGroups: SkillGroup[] = [
   },
 ];
 
-// Legacy export for backward compatibility
-export const skills = {
-  backend: [
-    "Node.js",
-    "NestJS",
-    "Express.js",
-    "TypeScript",
-    "REST APIs",
-    "Microservices",
-    "API Gateway",
-  ],
-  databases: ["MongoDB", "PostgreSQL", "Redis"],
-  frontend: ["React", "Next.js", "Electron", "Tailwind CSS"],
-  integrations: [
-    "Twilio",
-    "Google Calendar API",
-    "OAuth 2.0",
-    "JWT",
-    "GitHub API",
-    "Webhooks",
-  ],
-};
-
-export const experience = [
-  {
-    title: "Backend / Full-Stack Engineer",
-    company: "Freelance",
-    duration: "2+ years",
-    description: "Healthcare, IoT, and enterprise systems",
-  },
-];
-
 export const siteConfig = {
   name: "Vishvajeetsinh Zala",
   title: "Backend / Full-Stack Software Engineer",

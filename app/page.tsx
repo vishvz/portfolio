@@ -24,7 +24,7 @@ export default function Home() {
       <footer className="py-8 px-6 lg:px-12 border-t border-[#2A2D35]">
         <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-sm text-[#6B6B70]">
-            &copy; {new Date().getFullYear()} Vishvajeet. All rights reserved.
+            &copy; {new Date().getFullYear()} Vishvajeetsinh Zala. All rights reserved.
           </p>
           <div className="flex items-center gap-4">
             <a

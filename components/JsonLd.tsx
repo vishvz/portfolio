@@ -7,6 +7,7 @@ export default function JsonLd() {
     "@context": "https://schema.org",
     "@type": "Person",
     name: siteConfig.name,
+    alternateName: ["Vishvajeet", "Vishvajeet Zala", "vishvz", "Vishvajeetsinh"],
     url: siteUrl,
     jobTitle: siteConfig.title,
     description: siteConfig.tagline,
@@ -46,14 +47,22 @@ export default function JsonLd() {
   const websiteSchema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    name: "Vishvajeet Portfolio",
+    name: "Vishvajeetsinh Zala Portfolio",
     url: siteUrl,
     description:
-      "Backend-focused software engineer building reliable systems for healthcare, IoT, and enterprise applications.",
+      "Vishvajeetsinh Zala - Backend-focused software engineer building reliable systems for healthcare, IoT, and enterprise applications.",
     author: {
       "@type": "Person",
       name: siteConfig.name,
     },
+  };
+
+  const profilePageSchema = {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    mainEntity: personSchema,
+    dateCreated: "2024-01-01",
+    dateModified: new Date().toISOString().split("T")[0],
   };
 
   return (
@@ -65,6 +74,10 @@ export default function JsonLd() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(profilePageSchema) }}
       />
     </>
   );
