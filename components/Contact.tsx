@@ -1,4 +1,5 @@
 import { siteConfig } from '@/data/projects';
+import ShareButton from './ShareButton';
 
 export default function Contact() {
   return (
@@ -63,6 +64,10 @@ export default function Contact() {
               >
                 GitHub
               </a>
+              <ShareButton
+                title="Vishvajeetsinh Zala | Software Engineer"
+                text="Backend / Full-Stack Software Engineer portfolio"
+              />
             </div>
           </div>
         </div>

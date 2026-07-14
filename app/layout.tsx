@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     apple: "/favicon.svg",
   },
   description:
-    "Vishvajeetsinh Zala - Backend-focused software engineer building reliable systems for healthcare, IoT, and enterprise applications. Experienced in Node.js, NestJS, microservices, MongoDB, and PostgreSQL.",
+    "Backend-focused software engineer building reliable systems for healthcare, IoT & enterprise apps. Node.js, NestJS, microservices, MongoDB, PostgreSQL.",
   keywords: [
     "Vishvajeetsinh Zala",
     "Vishvajeet Zala",

@@ -7,15 +7,15 @@ export default function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Main content - takes 8 columns on desktop */}
           <div className="lg:col-span-8">
-            {/* Name */}
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-[#EDEDED] mb-4 lg:mb-6">
-              {siteConfig.name}
+            {/* Name + title as a single heading */}
+            <h1 className="mb-6 lg:mb-8">
+              <span className="block text-4xl sm:text-5xl md:text-6xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-[#EDEDED] mb-4 lg:mb-6">
+                {siteConfig.name}
+              </span>
+              <span className="block text-xl sm:text-2xl lg:text-3xl text-[#A1A1A6] font-medium">
+                {siteConfig.title}
+              </span>
             </h1>
-
-            {/* Title */}
-            <p className="text-xl sm:text-2xl lg:text-3xl text-[#A1A1A6] font-medium mb-6 lg:mb-8">
-              {siteConfig.title}
-            </p>
 
             {/* Tagline */}
             <p className="text-lg lg:text-xl text-[#6B6B70] max-w-2xl mb-8 lg:mb-10 leading-relaxed">

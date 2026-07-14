@@ -22,6 +22,23 @@ export default function Home() {
         <Contact />
       </main>
       <footer className="py-8 px-6 lg:px-12 border-t border-[#2A2D35]">
+        <nav
+          aria-label="Footer"
+          className="max-w-6xl mx-auto mb-6 flex flex-wrap items-center gap-x-6 gap-y-3"
+        >
+          <a href="#about" className="text-sm text-[#6B6B70] hover:text-[#EDEDED] transition-colors">
+            About
+          </a>
+          <a href="#skills" className="text-sm text-[#6B6B70] hover:text-[#EDEDED] transition-colors">
+            Skills
+          </a>
+          <a href="#projects" className="text-sm text-[#6B6B70] hover:text-[#EDEDED] transition-colors">
+            Projects
+          </a>
+          <a href="#contact" className="text-sm text-[#6B6B70] hover:text-[#EDEDED] transition-colors">
+            Contact
+          </a>
+        </nav>
         <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-sm text-[#6B6B70]">
             &copy; {new Date().getFullYear()} Vishvajeetsinh Zala. All rights reserved.
