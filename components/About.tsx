@@ -15,14 +15,15 @@ export default function About() {
           <div className="lg:col-span-9">
             <div className="space-y-6 text-lg lg:text-xl text-[#A1A1A6] leading-relaxed max-w-3xl">
               <p>
-                I&apos;m a backend-focused software engineer with experience building systems
+                I&apos;m a full-stack software engineer, mainly on the MERN stack (MongoDB,
+                Express, React, Node.js), with experience building systems
                 that handle real-world complexity. My work spans healthcare platforms,
                 IoT device management, and enterprise applications—domains where reliability,
                 data integrity, and secure access control are non-negotiable.
               </p>
               <p>
-                I take ownership of backend architecture from database design through
-                API implementation to deployment. I&apos;ve designed microservices architectures,
+                I take ownership of features end to end, from database design and APIs
+                to React and Next.js interfaces, desktop apps, and deployment. I&apos;ve designed microservices architectures,
                 built multi-tenant systems with proper data isolation, and implemented
                 transactional workflows that maintain consistency under concurrent load.
               </p>

@@ -24,6 +24,7 @@ export default function JsonLd() {
       "IoT Systems",
       "Enterprise Systems",
       "Full-Stack Development",
+      "MERN Stack",
       "Frontend Development",
       "Backend Development",
       "Database Management",
@@ -50,7 +51,7 @@ export default function JsonLd() {
     name: "Vishvajeetsinh Zala Portfolio",
     url: siteUrl,
     description:
-      "Vishvajeetsinh Zala - Backend-focused software engineer building reliable systems for healthcare, IoT, and enterprise applications.",
+      "Vishvajeetsinh Zala - Full-stack software engineer building reliable systems for healthcare, IoT, and enterprise applications.",
     author: {
       "@type": "Person",
       name: siteConfig.name,

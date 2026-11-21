@@ -22,7 +22,7 @@ export default function Contact() {
             </p>
 
             <p className="text-[#A1A1A6] text-lg mb-10 max-w-xl">
-              I&apos;m open to discussing backend engineering roles, consulting opportunities,
+              I&apos;m open to discussing full-stack engineering roles, consulting opportunities,
               or interesting technical challenges.
             </p>
 
@@ -66,7 +66,7 @@ export default function Contact() {
               </a>
               <ShareButton
                 title="Vishvajeetsinh Zala | Software Engineer"
-                text="Backend / Full-Stack Software Engineer portfolio"
+                text="Full-Stack Software Engineer portfolio"
               />
             </div>
           </div>

@@ -19,7 +19,7 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://vishvajeet.dev";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Vishvajeetsinh Zala | Backend / Full-Stack Software Engineer",
+    default: "Vishvajeetsinh Zala | Full-Stack Software Engineer",
     template: "%s | Vishvajeetsinh Zala",
   },
   icons: {
@@ -27,14 +27,18 @@ export const metadata: Metadata = {
     apple: "/favicon.svg",
   },
   description:
-    "Backend-focused software engineer building reliable systems for healthcare, IoT & enterprise apps. Node.js, NestJS, microservices, MongoDB, PostgreSQL.",
+    "Full-stack software engineer building reliable web apps for healthcare, IoT & enterprise. MERN stack, Next.js, NestJS, PostgreSQL.",
   keywords: [
     "Vishvajeetsinh Zala",
     "Vishvajeet Zala",
     "Vishvajeet",
     "vishvz",
-    "Backend Engineer",
     "Full-Stack Developer",
+    "Full-Stack Engineer",
+    "MERN Stack Developer",
+    "Backend Engineer",
+    "React",
+    "Next.js",
     "Node.js",
     "NestJS",
     "Express.js",
@@ -61,24 +65,24 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: siteUrl,
-    title: "Vishvajeetsinh Zala | Backend / Full-Stack Software Engineer",
+    title: "Vishvajeetsinh Zala | Full-Stack Software Engineer",
     description:
-      "Vishvajeetsinh Zala - Backend-focused software engineer building reliable systems for healthcare, IoT, and enterprise applications.",
+      "Vishvajeetsinh Zala - Full-stack software engineer building reliable systems for healthcare, IoT, and enterprise applications.",
     siteName: "Vishvajeetsinh Zala Portfolio",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Vishvajeet - Backend / Full-Stack Software Engineer",
+        alt: "Vishvajeet - Full-Stack Software Engineer",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Vishvajeetsinh Zala | Backend / Full-Stack Software Engineer",
+    title: "Vishvajeetsinh Zala | Full-Stack Software Engineer",
     description:
-      "Vishvajeetsinh Zala - Backend-focused software engineer building reliable systems for healthcare, IoT, and enterprise applications.",
+      "Vishvajeetsinh Zala - Full-stack software engineer building reliable systems for healthcare, IoT, and enterprise applications.",
     images: ["/og-image.png"],
   },
   robots: {

@@ -4,7 +4,6 @@ export interface Project {
   tagline: string;
   description: string;
   techStack: string[];
-  role: string;
   highlights: string[];
   type: "healthcare" | "iot" | "enterprise";
   order: number;
@@ -24,7 +23,6 @@ export const projects: Project[] = [
     description:
       "A backend-heavy IoT platform for real-time monitoring and remote control of ~20,000 IoT-enabled smart street-lighting devices.",
     techStack: ["TypeScript", "NestJS", "MongoDB", "MQTT", "Next.js"],
-    role: "Backend Developer",
     highlights: [
       "Architected backend services for real-time monitoring and remote control of ~20,000 devices",
       "Engineered MQTT telemetry ingestion processing ~50 million messages per day, with validation and deduplication of delayed or duplicate data",
@@ -42,7 +40,6 @@ export const projects: Project[] = [
     description:
       "A multi-tenant SaaS accounting platform that lets accounting firms onboard clients and manage their accounting through staff-based workflows, assisted by an AI service.",
     techStack: ["Python", "FastAPI", "LangGraph", "RabbitMQ", "React", "PostgreSQL"],
-    role: "Backend Developer",
     highlights: [
       "Building FastAPI services backed by PostgreSQL for client onboarding, staff management, and accounting operations",
       "Collaborating on a LangGraph AI service that auto-categorizes transactions, extracts invoice and receipt data, and drafts ledger entries",
@@ -58,7 +55,6 @@ export const projects: Project[] = [
     description:
       "A healthcare intermediary platform connecting insurers, corporates, and diagnostic service providers across five role-based portals.",
     techStack: ["TypeScript", "React", "Express.js", "MongoDB"],
-    role: "Backend Developer",
     highlights: [
       "Built backend workflows connecting insurers, corporates, and diagnostic providers across 5 role-based portals",
       "Implemented end-to-end appointment lifecycle management handling ~1,000 appointments per day",
@@ -75,7 +71,6 @@ export const projects: Project[] = [
     description:
       "A multi-tenant healthcare platform supporting patients, clinics, hospitals, laboratories, and staff.",
     techStack: ["TypeScript", "Node.js", "Express.js", "MongoDB", "PostgreSQL"],
-    role: "Sole Backend Developer",
     highlights: [
       "Designed a microservices architecture of 7 backend services behind a centralized API Gateway",
       "Enforced tenant- and clinic-level data isolation",
@@ -99,7 +94,6 @@ export const projects: Project[] = [
       "Twilio",
       "Google Calendar API",
     ],
-    role: "Backend + Desktop Developer",
     highlights: [
       "Implemented a secure desktop auto-update mechanism using backend-controlled GitHub releases",
       "Built two-way clinic-to-patient messaging with Twilio Conversations (desktop chat to patient SMS)",
@@ -116,7 +110,6 @@ export const projects: Project[] = [
     description:
       "A full-stack asset management system tracking assets, maintenance schedules, warranties, and lifecycle events.",
     techStack: ["TypeScript", "Next.js", "MongoDB"],
-    role: "Full-Stack Developer",
     highlights: [
       "Designed and built asset tracking across maintenance schedules, warranties, and lifecycle events",
       "Built role-based access control and multi-site data segregation",
@@ -144,17 +137,17 @@ export const skillGroups: SkillGroup[] = [
   },
   {
     label: "Languages",
-    order: 2,
+    order: 3,
     items: ["TypeScript", "JavaScript", "Python", "SQL"],
   },
   {
     label: "Databases",
-    order: 3,
+    order: 4,
     items: ["PostgreSQL", "MongoDB", "DynamoDB", "MySQL", "Redis"],
   },
   {
     label: "Frontend",
-    order: 4,
+    order: 2,
     items: ["React", "Next.js", "Electron", "Tailwind CSS"],
   },
   {
@@ -189,9 +182,9 @@ export const skillGroups: SkillGroup[] = [
 
 export const siteConfig = {
   name: "Vishvajeetsinh Zala",
-  title: "Backend / Full-Stack Software Engineer",
+  title: "Full-Stack Software Engineer",
   tagline:
-    "Building reliable backend systems for healthcare, IoT, and enterprise applications",
+    "Building reliable, end-to-end systems for healthcare, IoT, and enterprise applications",
   location: "Ahmedabad, India",
   email: "vishvz2495@gmail.com",
   linkedin: "https://linkedin.com/in/vishvz",

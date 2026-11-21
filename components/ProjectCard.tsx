@@ -36,9 +36,6 @@ export default function ProjectCard({ project, featured = false }: ProjectCardPr
         <p className={`text-[#A1A1A6] ${featured ? 'text-lg' : ''}`}>{project.tagline}</p>
       </div>
 
-      {/* Role */}
-      <p className="text-sm text-[#C7B9A6] mb-4">{project.role}</p>
-
       {/* Tech Stack */}
       <div className="flex flex-wrap gap-2 mb-6">
         {project.techStack.map((tech) => (

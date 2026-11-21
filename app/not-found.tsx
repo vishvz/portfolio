@@ -18,7 +18,7 @@ export default function NotFound() {
             Impressive, really.
           </p>
           <p className="text-sm text-[#6B6B70]">
-            I build backend systems that handle millions of requests,
+            I build systems that handle millions of requests,
             but apparently I couldn't handle this one URL.
           </p>
           <p className="text-sm text-[#6B6B70]">
